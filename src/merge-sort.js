@@ -14,7 +14,7 @@ aij.mergeSort = function(items) {
         }
 
         return result;
-    }
+    };
 
     var sort = function(arr) {
         var middle = arr && (arr.length / 2) << 0;
@@ -26,7 +26,7 @@ aij.mergeSort = function(items) {
         }
 
         return merge(sort(arr.slice(0, middle)), sort(arr.slice(middle)));
-    }
+    };
 
     return sort(items);
 };
