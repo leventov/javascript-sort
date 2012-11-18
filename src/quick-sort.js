@@ -20,7 +20,7 @@ aij.quickSort = function (array, insertionSortSwitchThreshold, partitionAlgorith
         }
 
         // Get a random pivot and move it to the beginning of the array.
-        var pivotIndex = (left + right / 2) << 0,
+        var pivotIndex = ((left + right) / 2) << 0,
             pivot = array[pivotIndex],
             temp;
 
@@ -56,7 +56,7 @@ aij.quickSort = function (array, insertionSortSwitchThreshold, partitionAlgorith
         }
 
         // Get a random pivot and move it to the beginning of the array.
-        var pivotIndex = (left + right / 2) << 0,
+        var pivotIndex = ((left + right) / 2) << 0,
             pivot = array[pivotIndex],
             high = right - 1,
             rm1 = high,
